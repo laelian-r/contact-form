@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <article></article>
+    <form action="/">
+      <h1>Contact Us</h1>
+
+      <div class="name-container">
+        <div class="label-input-container" id="firstName_container">
+          <label for="firstName">First Name <span>*</span></label>
+          <input type="text" id="firstName">
+        </div>
+  
+        <div class="label-input-container" id="lastName_container">
+          <label for="lastName">Last Name <span>*</span></label>
+          <input type="text" id="lastName">
+        </div>
+      </div>
+
+      <div class="label-input-container" id="email_container">
+        <label for="emailAddress">Email Address <span>*</span></label>
+        <input type="email" id="emailAddress">
+      </div>
+
+      <div class="input-radio-container">
+        <label for="queryType">Query Type <span>*</span></label>
+
+        <div id="total_select_container">
+          <div class="select-input-container">
+            <div class="input-select" id="input_select_1">
+              <input type="radio" name="select" id="generalEnquiry">
+              <label for="generalEnquiry" id="label_generalEnquiry">General Enquiry</label>
+            </div>
+    
+            <div class="input-select" id="input_select_2">
+              <input type="radio" name="select" id="supportRequest">
+              <label for="supportRequest" id="label_supportRequest">Support Request</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="total_message_container">
+        <div class="label-input-container" id="message_container">
+          <label for="message">Message <span>*</span></label>
+          <textarea name="message" id="messageInput"></textarea>
+        </div>
+      </div>
+
+      <div id="total_consent_container">
+        <div class="consent-input-container">
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent" id="label_consent">I consent to being contacted by the team <span>*</span></label>
+        </div>
+      </div>
+
+      <input type="submit" value="Submit" id="submit" class="submit">
+    </form>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
